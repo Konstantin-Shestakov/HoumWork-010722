@@ -1,4 +1,4 @@
-﻿/*// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 // Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
 // 3, 5 -> 243 (3⁵)
@@ -11,12 +11,19 @@ double N = Math.Pow(A, B);
 return (N);
 
 }
-Console.WriteLine("Введите число А,   ");
+Console.WriteLine("Введите положительное целое число раз возведения числа А в степень,   ");
+int j = Convert.ToInt32(Console.ReadLine());
+for (int i = 0; i < j; i++)
+{
+Console.WriteLine("Введите положительное целое число А,   ");
 int Number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число степени А,   ");
+Console.WriteLine("Введите положительное целое число степени, в которую возводим А,   ");
 int Num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Number + "," + Num + " -> " + Stepen(Number, Num));
-*/
+
+Console.WriteLine(Number + "," + Num + " -> " + Stepen(Number, Num)); 
+}
+
+
 
 /*// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
@@ -48,31 +55,31 @@ int SumInteger (int Num)
 
 // 6, 1, 33 -> [6, 1, 33]
 
-int[] CreateRandomArray(int start, int end)
-{
-    int[] RandomArray = new int[8];
-    for (int i = 0; i < 8; i++)
-    {
-        RandomArray[i] = new Random().Next(start, end + 1);
-        Console.Write(RandomArray[i]+",");
-    }
-    return RandomArray;
-}
+// int[] CreateRandomArray(int start, int end)
+// {
+//     int[] RandomArray = new int[8];
+//     for (int i = 0; i < 8; i++)
+//     {
+//         RandomArray[i] = new Random().Next(start, end + 1);
+//         Console.Write(RandomArray[i]+",");
+//     }
+//     return RandomArray;
+// }
 
- void ShowArray(int[] array)
-{   Console.Write("  ->  [");
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + ",");
-    }
-    Console.Write("]");
-    Console.WriteLine();
-}
+//  void ShowArray(int[] array)
+// {   Console.Write("  ->  [");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ",");
+//     }
+//     Console.Write("]");
+//     Console.WriteLine();
+// }
 
-Console.WriteLine("Введите первое число случайно генерируемого диапазона 8-ми элементов");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите последнее число случайно генерируемого диапазона 8-ми элементов");
-int max = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите первое число случайно генерируемого диапазона 8-ми элементов");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите последнее число случайно генерируемого диапазона 8-ми элементов");
+// int max = Convert.ToInt32(Console.ReadLine());
 
-int[] myRandomArray = CreateRandomArray(min, max);
-ShowArray(myRandomArray);
+// int[] myRandomArray = CreateRandomArray(min, max);
+// ShowArray(myRandomArray);
