@@ -2,53 +2,56 @@
 //14212 -> нет
 //23432 -> да
 //12821 -> да
-
 internal class Program
 {
     private static void Main(string[] args)
     {
         {
+            //Console.WriteLine("Input number,    ");
+            //int N = Convert.ToInt32(Console.ReadLine())
             
-            void ChNumber (int Integer)//Вывод развернутого числа
+                                                                          //  void ChNumber (int Integer)//Вывод развернутого числа
             {
-            int CurrNumber = Integer % 10; 
-            Console.Write(CurrNumber);
-                for (int i = 0; i < 4; i++)
-            {
-                CurrNumber = Integer / 10 % 10;
-                Integer = Integer / 10;
-                Console.Write(CurrNumber);
-            }
-            }
-            // Сравнение 1,5 и 2,4 чисел на равенство
+                           //int CurrNumber = N;                             //int CurrNumber = Integer % 10; 
+                           //Console.Write(CurrNumber);
+                           // //    for (int i = 0; i < 4; i++)
+                           // {
+                           //  CurrNumber = N / 10 % 10;                       //CurrNumber = Integer / 10 % 10;
+                           //  N = N / 10;                                   //Integer = Integer / 10;
+                           //     Console.Write(CurrNumber);
+                            // }
             
-            void Palindrom (int Num)
-            {
-                int b5 = Num % 10; 
-                int b4 = Num / 10 % 10; 
-                int b3 = Num / 100 % 10 ; 
-                int b2 = Num / 1000 % 10 ;
-                int b1 = Num / 10000 % 10;
+                            // }
+                                                         // Сравнение 1,5 и 2,4 чисел на равенство
+            
+                                                                                      //void Palindrom (double Num)
+                                                                                         //{
+              Console.WriteLine("Input number,    ");
+            int Num = Convert.ToInt32(Console.ReadLine());
+            
+                double b5 = Num % 10; 
+                double b4 = Num / 10 % 10; 
+                double b3 = Num / 100 % 10 ; 
+                double b2 = Num / 1000 % 10 ;
+                double b1 = Num / 10000 % 10;
 
                 if (b1 == b5 && b2 == b4)
                 {
-                Console.Write(" -> да ");
+                Console.Write(Num + " -> да ");
                 }
                 else
                 {
-                Console.Write(" -> нет ");
+                Console.Write(Num + " -> нет ");
                 }
-            }
+              
+            //}
         }
-            Console.WriteLine("Input number,    ");
-            int N = Convert.ToInt32(Console.ReadLine());
-            ChNumber(N);
-            Palindrom(N);
+                                                                     //Console.WriteLine("Input number,    ");
+                                                                    //int N = Convert.ToInt32(Console.ReadLine());
+                                                                   //ChNumber(N);
+                                                                  //Palindrom(N);
+    }}}
 
-    }
-
-
-}
 
 
 /*
